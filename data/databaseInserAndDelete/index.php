@@ -2,6 +2,8 @@
 
 $connection = mysqli_connect('localhost', 'root', '', 'sklep');
 
+
+
 ?>
 
 <!DOCTYPE html>

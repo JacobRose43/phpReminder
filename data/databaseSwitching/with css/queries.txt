@@ -1,0 +1,17 @@
+ALTER TABLE `ludzie`  
+ADD `dzien_urodzin` TEXT NOT NULL  AFTER `nazwisko`,  
+ADD `dzien_imienin` TEXT NOT NULL  AFTER `dzien_urodzin`,  
+ADD   INDEX  `alph` (`dzien_urodzin`(20), `dzien_imienin`(20));
+
+
+INSERT INTO `ludzie` (`id`, `imie`, `nazwisko`, `dzien_urodzin`, `dzien_imienin`) 
+VALUES (NULL, 'Tadeusz', 'Zebra', '12 maja', '23 kwietnia'), 
+(NULL, 'Dawid', 'Borowicz', '21 pazdziernika', '30 grudnia'), 
+(NULL, 'Marcel', 'Kentra', '30 grudnia', '12 marca'), 
+(NULL, 'Krzysztof', 'Zbyszewski', '19 stycznia', '17 czerwca'), 
+(NULL, 'Jakub', 'Bokulski', '25 stycznia', '22 lutego'), 
+(NULL, 'Konrad', 'Wrzesinski', '26 listopada', '27 stycznia'), 
+(NULL, 'Igor', 'Tadeusiak', '17 sierpnia', '11 pazdziernika'), 
+(NULL, 'Michal', 'Kacprzyk', '9 lipca', '2 wrzesnia'), 
+(NULL, 'Mateusz', 'Wroclawski', '3 grudnia', '9 lutego'), 
+(NULL, 'Piotr', 'Zielony', '27 lutego', '28 czerwca');
