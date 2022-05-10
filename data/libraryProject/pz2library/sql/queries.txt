@@ -1,0 +1,10 @@
+SELECT 	b.title AS title, CONCAT(a.firstname, ' ', a.lastname) AS aname,
+		c.name AS cname
+
+FROM book AS b, author AS a, category AS c, book_category AS bc
+
+WHERE a.id = b.author_id AND b.id = bc.book_id AND c.id = bc.category_id
+
+ORDER BY b.title
+
+--------------------------------------------------------------------
