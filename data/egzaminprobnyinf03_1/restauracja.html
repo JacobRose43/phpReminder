@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Restauracja Wszystkie Smaki</title>
+		<link rel="stylesheet" href="styl_1.css" />
+	</head>
+	<body>
+		<main>
+			<nav class="nav">
+				<h1>Witamy w restauracji "Wszystkie Smaki"</h1>
+			</nav>
+
+			<section>
+				<div class="container1">
+					<article class="section1">
+						<img class="img" src="1.jpg" alt="Nasze Danie" />
+					</article>
+
+					<article class="section2">
+						<h4>U nas dobrze zjesz!</h4>
+						<ol>
+							<li>Obiady od 40 zł</li>
+							<li>Przekąski od 10 zł</li>
+							<li>Kolacje od 20 zł</li>
+						</ol>
+					</article>
+				</div>
+			</section>
+
+			<section class="section3">
+				<h2>Zarezerwuj stolik on-line</h2>
+
+				<form action="rezerwacja.php" method="post">
+					<label for="data">Data (format rrrr-mm-dd):</label><br />
+					<input type="text" id="data" name="data" /><br />
+					<label for="osoby">Ile osób?:</label><br />
+					<input type="number" id="osoby" name="osoby" /><br />
+					<label for="numer">Twój numer telefonu:</label><br />
+					<input type="text" id="numer" name="numer" /><br />
+					<input type="checkbox" name="dane" id="dane" />
+					<label for="dane">Zgadzam się na przetwarzanie moich danych osobowych</label
+					><br />
+					<input type="reset" value="WYCZYŚĆ" />
+					<input type="submit" value="REZERWUJ" />
+				</form>
+			</section>
+
+			<footer class="footer">
+				<p>Stronę opracował <i>123456789123</i></p>
+			</footer>
+		</main>
+	</body>
+</html>
